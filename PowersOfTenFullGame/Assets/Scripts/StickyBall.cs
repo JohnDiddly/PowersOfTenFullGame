@@ -336,6 +336,7 @@ public class StickyBall : MonoBehaviour
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> parent of d0545cb... changed colliders
 =======
 >>>>>>> parent of d0545cb... changed colliders
@@ -361,6 +362,26 @@ public class StickyBall : MonoBehaviour
 
         //    }
         //}
+=======
+
+                // Disable so that the objects will only stick to your sphere
+                other.enabled = false;
+
+                // Becomes Child so it stays with the ball
+                other.transform.SetParent(this.transform);
+
+                // Create text in the public GameObject sizeUI. Math.Round rounds off the sticky ball size to one decimals
+                sizeUI.GetComponent<Text>().text = "Mass: " + Math.Round(size, 2).ToString();
+
+                // Sound effect when we Pick up a Sticky Object
+                this.GetComponent<AudioSource>().PlayOneShot(pickupSound);
+
+                // Print to Console, works like println () in Processing or print() in p5
+                Debug.Log(size);
+
+            }
+        }
+>>>>>>> parent of d0545cb... changed colliders
     }
 }
 
