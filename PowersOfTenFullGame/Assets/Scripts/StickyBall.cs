@@ -91,6 +91,7 @@ public class StickyBall : MonoBehaviour
 
     }
 
+<<<<<<< HEAD
     // User-defined function that contains boolean expression for the ten groups
 
     //void unlockPickupGroups()
@@ -250,6 +251,69 @@ public class StickyBall : MonoBehaviour
 
     //    }
     //}
+=======
+    // User-defined function that contains boolean expression for the three groups
+
+    void unlockPickupGroups()
+    {
+        if (group1Unlocked == false)
+        {
+
+            if (size >= 1)
+            {
+                group1Unlocked = true;
+                for (int i = 0; i < group1.transform.childCount; i++)
+                {
+                    group1.transform.GetChild(i).GetComponent<Collider>().isTrigger = true;
+                }
+            }
+        }
+        else if (group2Unlocked == false)
+        {
+
+            if (size >= 1.8f)
+            {
+                group2Unlocked = true;
+                for (int i = 0; i < group2.transform.childCount; i++)
+                {
+                    group2.transform.GetChild(i).GetComponent<Collider>().isTrigger = true;
+                }
+                // Change distance between camera and ball
+                distanceToCamera = 4;
+            }
+        }
+        else if (group3Unlocked == false)
+        {
+
+            if (size >= 2.8f)
+            {
+                group3Unlocked = true;
+                for (int i = 0; i < group3.transform.childCount; i++)
+                {
+                    group3.transform.GetChild(i).GetComponent<Collider>().isTrigger = true;
+                    // Change distance between camera and ball
+                    distanceToCamera = 4.3f;
+                }
+            }
+
+        }
+        else if (group4Unlocked == false)
+        {
+
+            if (size >= 3.8f)
+            {
+                group4Unlocked = true;
+                for (int i = 0; i < group4.transform.childCount; i++)
+                {
+                    group4.transform.GetChild(i).GetComponent<Collider>().isTrigger = true;
+                    // Change distance between camera and ball
+                    distanceToCamera = 5.3f;
+                }
+            }
+
+        }
+    }
+>>>>>>> parent of d0545cb... changed colliders
 
     // Pick up Sticky Objects
     // OnTriggerEnter is a commonly used unity function that gets called when an object collides with a trigger
@@ -261,9 +325,15 @@ public class StickyBall : MonoBehaviour
         //    if (0 < size)
         //    {
 
+<<<<<<< HEAD
         //        // Grow the Sticky Ball
         //        transform.localScale += new Vector3(0.01f, 0.01f, 0.01f);
         //        size += 0.01f;
+=======
+                // Grow the Sticky Ball
+                transform.localScale += new Vector3(0.1f, 0.1f, 0.1f);
+                size += 0.1f;
+>>>>>>> parent of d0545cb... changed colliders
 
         //        // Disable so that the objects will only stick to your sphere
         //        other.enabled = false;
