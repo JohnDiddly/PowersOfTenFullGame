@@ -335,6 +335,9 @@ public class StickyBall : MonoBehaviour
                 size += 0.1f;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of d0545cb... changed colliders
+=======
 >>>>>>> parent of d0545cb... changed colliders
 =======
 >>>>>>> parent of d0545cb... changed colliders
