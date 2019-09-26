@@ -334,6 +334,9 @@ public class StickyBall : MonoBehaviour
                 transform.localScale += new Vector3(0.1f, 0.1f, 0.1f);
                 size += 0.1f;
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of d0545cb... changed colliders
+=======
 >>>>>>> parent of d0545cb... changed colliders
 =======
 >>>>>>> parent of d0545cb... changed colliders
