@@ -3595,7 +3595,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300018, guid: 20f71b43a1f2da8408bd4397c217b82f, type: 3}
 --- !u!23 &100437582
@@ -5288,7 +5288,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300018, guid: 20f71b43a1f2da8408bd4397c217b82f, type: 3}
 --- !u!23 &133885482
@@ -18556,7 +18556,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
   m_LocalRotation: {x: 0.10017479, y: -0, z: -0, w: 0.99496984}
-  m_LocalPosition: {x: -100.654, y: 13.4, z: 79.4}
+  m_LocalPosition: {x: -100.654, y: 13.41, z: 79.34}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -22159,7 +22159,7 @@ BoxCollider:
   m_GameObject: {fileID: 611872431}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 24, y: 5, z: 266}
   m_Center: {x: 0, y: 0, z: 0}
@@ -24288,7 +24288,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300018, guid: 20f71b43a1f2da8408bd4397c217b82f, type: 3}
 --- !u!23 &658397541
@@ -26154,7 +26154,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300018, guid: 20f71b43a1f2da8408bd4397c217b82f, type: 3}
 --- !u!23 &706565109
@@ -31106,7 +31106,7 @@ BoxCollider:
   m_GameObject: {fileID: 923809731}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 27, y: 5, z: 269}
   m_Center: {x: 0, y: 0, z: 0}
@@ -34507,7 +34507,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300018, guid: 20f71b43a1f2da8408bd4397c217b82f, type: 3}
 --- !u!23 &1051956398
@@ -37603,7 +37603,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300018, guid: 20f71b43a1f2da8408bd4397c217b82f, type: 3}
 --- !u!23 &1136490354
@@ -37662,7 +37662,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -87.24021, y: -38.003136, z: 253.99782}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1171977817}
   m_Father: {fileID: 2081746234}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -39215,6 +39216,75 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.94471514, y: 4.2210255, z: 0.94244283}
   m_Center: {x: 0.0037686825, y: 0.05320645, z: 0}
+--- !u!1 &1171977815
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1171977817}
+  - component: {fileID: 1171977816}
+  m_Layer: 0
+  m_Name: InHouseLight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &1171977816
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1171977815}
+  m_Enabled: 1
+  serializedVersion: 8
+  m_Type: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 132
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!4 &1171977817
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1171977815}
+  m_LocalRotation: {x: 0.69132024, y: -0.18075927, z: 0.18523866, w: 0.6746029}
+  m_LocalPosition: {x: 27.7, y: -7.9, z: -10.5}
+  m_LocalScale: {x: 1, y: 4.2256, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1136490356}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 91.40198, y: -30, z: 0}
 --- !u!1 &1185600069
 GameObject:
   m_ObjectHideFlags: 0
@@ -41611,7 +41681,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300018, guid: 20f71b43a1f2da8408bd4397c217b82f, type: 3}
 --- !u!23 &1262694388
@@ -45346,7 +45416,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300018, guid: 20f71b43a1f2da8408bd4397c217b82f, type: 3}
 --- !u!23 &1371053153
@@ -45696,7 +45766,7 @@ Transform:
   m_GameObject: {fileID: 1393631973}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -100.6502, y: 13.231, z: 80.2246}
-  m_LocalScale: {x: 0.060808357, y: 0.060808357, z: 0.060808357}
+  m_LocalScale: {x: 0.06, y: 0.06, z: 0.06}
   m_Children:
   - {fileID: 1638534748}
   - {fileID: 417248062}
@@ -45950,7 +46020,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300018, guid: 20f71b43a1f2da8408bd4397c217b82f, type: 3}
 --- !u!23 &1397366719
@@ -55276,7 +55346,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300018, guid: 20f71b43a1f2da8408bd4397c217b82f, type: 3}
 --- !u!23 &1628832040
@@ -66333,7 +66403,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300018, guid: 20f71b43a1f2da8408bd4397c217b82f, type: 3}
 --- !u!23 &1963839789
@@ -67518,7 +67588,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300018, guid: 20f71b43a1f2da8408bd4397c217b82f, type: 3}
 --- !u!23 &1992227123
@@ -70341,7 +70411,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300018, guid: 20f71b43a1f2da8408bd4397c217b82f, type: 3}
 --- !u!23 &2056678688

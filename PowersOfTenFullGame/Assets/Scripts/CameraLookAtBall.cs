@@ -18,5 +18,8 @@ public class CameraLookAtBall : MonoBehaviour
     {
         //look at ball
         transform.LookAt(ball.transform.position + lookAtOffset);
+    
+//        Debug.Log(ball.transform.position + lookAtOffset);
     }
+
 }

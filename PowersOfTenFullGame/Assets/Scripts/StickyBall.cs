@@ -17,10 +17,10 @@ public class StickyBall : MonoBehaviour
     Vector2 unitv2;
 
     public GameObject cameraReference;
-    float distanceToCamera = 3;
+    float distanceToCamera = 2.5f;
 
     // ball size, starting at 1
-    float size = 1;
+    float size = 0.6f;
 
     // adding different groups
     public GameObject group1;
@@ -87,7 +87,7 @@ public class StickyBall : MonoBehaviour
         // Set Camera Position Behidn the Ball based on rotation
         cameraReference.transform.position = new Vector3(-unitv2.x * distanceToCamera, distanceToCamera, -unitv2.y * distanceToCamera) + this.transform.position;
 
-        unlockPickupGroups();
+       unlockPickupGroups();
 
     }
 
@@ -98,7 +98,7 @@ public class StickyBall : MonoBehaviour
         if (group1Unlocked == false)
         {
 
-            if (size >= 1)
+            if (size >= 0.6f)
             {
                 group1Unlocked = true;
                 for (int i = 0; i < group1.transform.childCount; i++)
@@ -118,7 +118,7 @@ public class StickyBall : MonoBehaviour
                     group2.transform.GetChild(i).GetComponent<Collider>().isTrigger = true;
                 }
                 // Change distance between camera and ball
-                distanceToCamera = 4;
+                distanceToCamera = 3.1f;
             }
         }
         else if (group3Unlocked == false)
@@ -130,9 +130,10 @@ public class StickyBall : MonoBehaviour
                 for (int i = 0; i < group3.transform.childCount; i++)
                 {
                     group3.transform.GetChild(i).GetComponent<Collider>().isTrigger = true;
-                    // Change distance between camera and ball
-                    distanceToCamera = 4.3f;
+  
                 }
+                // Change distance between camera and ball
+                distanceToCamera = 3.2f;
             }
 
         }
@@ -145,9 +146,10 @@ public class StickyBall : MonoBehaviour
                 for (int i = 0; i < group4.transform.childCount; i++)
                 {
                     group4.transform.GetChild(i).GetComponent<Collider>().isTrigger = true;
-                    // Change distance between camera and ball
-                    distanceToCamera = 5.3f;
+                  
                 }
+                // Change distance between camera and ball
+                distanceToCamera = 3.3f;
             }
 
         }
@@ -160,84 +162,90 @@ public class StickyBall : MonoBehaviour
                 for (int i = 0; i < group5.transform.childCount; i++)
                 {
                     group5.transform.GetChild(i).GetComponent<Collider>().isTrigger = true;
-                    // Change distance between camera and ball
-                    distanceToCamera = 6.3f;
+                 
                 }
+                // Change distance between camera and ball
+                distanceToCamera = 4;
             }
 
         }
         else if (group6Unlocked == false)
         {
 
-            if (size >= 1.48f)
+            if (size >= 1.68f)
             {
                 group6Unlocked = true;
                 for (int i = 0; i < group6.transform.childCount; i++)
                 {
                     group6.transform.GetChild(i).GetComponent<Collider>().isTrigger = true;
-                    // Change distance between camera and ball
-                    distanceToCamera = 7.3f;
+                    
                 }
+                // Change distance between camera and ball
+                distanceToCamera = 5;
             }
 
         }
         else if (group7Unlocked == false)
         {
 
-            if (size >= 1.58f)
+            if (size >= 1.98f)
             {
                 group7Unlocked = true;
                 for (int i = 0; i < group7.transform.childCount; i++)
                 {
                     group7.transform.GetChild(i).GetComponent<Collider>().isTrigger = true;
-                    // Change distance between camera and ball
-                    distanceToCamera = 8.3f;
+                   
                 }
+                // Change distance between camera and ball
+                distanceToCamera = 6f;
             }
 
         }
         else if (group8Unlocked == false)
         {
 
-            if (size >= 1.68f)
+            if (size >= 2.18f)
             {
                 group8Unlocked = true;
                 for (int i = 0; i < group8.transform.childCount; i++)
                 {
                     group8.transform.GetChild(i).GetComponent<Collider>().isTrigger = true;
-                    // Change distance between camera and ball
-                    distanceToCamera = 9.3f;
+                    
                 }
+                // Change distance between camera and ball
+                distanceToCamera = 7f;
             }
 
         }
         else if (group9Unlocked == false)
         {
 
-            if (size >= 1.78f)
+            if (size >= 2.38f)
             {
                 group9Unlocked = true;
                 for (int i = 0; i < group9.transform.childCount; i++)
                 {
                     group9.transform.GetChild(i).GetComponent<Collider>().isTrigger = true;
-                    // Change distance between camera and ball
-                    distanceToCamera = 10.3f;
+                    
                 }
+                // Change distance between camera and ball
+                distanceToCamera = 8f;
             }
 
         }
         else if (group10Unlocked == false)
         {
 
-            if (size >= 1.88f)
+            if (size >= 2.48f)
             {
                 group10Unlocked = true;
                 for (int i = 0; i < group10.transform.childCount; i++)
                 {
                     group10.transform.GetChild(i).GetComponent<Collider>().isTrigger = true;
-                    // Change distance between camera and ball
-                    distanceToCamera = 11.3f;
+                    
                 }
+                // Change distance between camera and ball
+                distanceToCamera = 9f;
             }
 
         }
