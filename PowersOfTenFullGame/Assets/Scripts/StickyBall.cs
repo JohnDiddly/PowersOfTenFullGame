@@ -17,7 +17,7 @@ public class StickyBall : MonoBehaviour
     Vector2 unitv2;
 
     public GameObject cameraReference;
-    float distanceToCamera = 5;
+    float distanceToCamera = 3;
 
     // ball size, starting at 1
     float size = 1;
@@ -31,6 +31,27 @@ public class StickyBall : MonoBehaviour
 
     public GameObject group3;
     bool group3Unlocked = false;
+
+    public GameObject group4;
+    bool group4Unlocked = false;
+
+    public GameObject group5;
+    bool group5Unlocked = false;
+
+    public GameObject group6;
+    bool group6Unlocked = false;
+
+    public GameObject group7;
+    bool group7Unlocked = false;
+
+    public GameObject group8;
+    bool group8Unlocked = false;
+
+    public GameObject group9;
+    bool group9Unlocked = false;
+
+    public GameObject group10;
+    bool group10Unlocked = false;
 
     // Pickup Sound Reference
     public AudioClip pickupSound;
@@ -97,7 +118,7 @@ public class StickyBall : MonoBehaviour
                     group2.transform.GetChild(i).GetComponent<Collider>().isTrigger = true;
                 }
                 // Change distance between camera and ball
-                distanceToCamera = 6;
+                distanceToCamera = 4;
             }
         }
         else if (group3Unlocked == false)
@@ -110,7 +131,22 @@ public class StickyBall : MonoBehaviour
                 {
                     group3.transform.GetChild(i).GetComponent<Collider>().isTrigger = true;
                     // Change distance between camera and ball
-                    distanceToCamera = 6.3f;
+                    distanceToCamera = 4.3f;
+                }
+            }
+
+        }
+        else if (group4Unlocked == false)
+        {
+
+            if (size >= 3.8f)
+            {
+                group4Unlocked = true;
+                for (int i = 0; i < group4.transform.childCount; i++)
+                {
+                    group4.transform.GetChild(i).GetComponent<Collider>().isTrigger = true;
+                    // Change distance between camera and ball
+                    distanceToCamera = 5.3f;
                 }
             }
 
