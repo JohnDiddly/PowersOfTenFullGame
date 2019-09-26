@@ -333,6 +333,9 @@ public class StickyBall : MonoBehaviour
                 // Grow the Sticky Ball
                 transform.localScale += new Vector3(0.1f, 0.1f, 0.1f);
                 size += 0.1f;
+<<<<<<< HEAD
+>>>>>>> parent of d0545cb... changed colliders
+=======
 >>>>>>> parent of d0545cb... changed colliders
 
         //        // Disable so that the objects will only stick to your sphere

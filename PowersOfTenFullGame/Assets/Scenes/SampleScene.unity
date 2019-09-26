@@ -13808,10 +13808,13 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
   serializedVersion: 2
   m_Size: {x: 1.2135999, y: 1.0762275, z: 1.2136002}
   m_Center: {x: 0.0005094111, y: 0.006788255, z: -0.0000010728836}
 =======
+=======
+>>>>>>> parent of d0545cb... changed colliders
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
@@ -39615,6 +39618,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
   serializedVersion: 2
   m_Size: {x: 0.94471514, y: 4.2210255, z: 0.94244283}
   m_Center: {x: 0.0037686825, y: 0.05320645, z: 0}
@@ -39688,10 +39692,15 @@ Transform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 91.40198, y: -30, z: 0}
 =======
+=======
+>>>>>>> parent of d0545cb... changed colliders
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300004, guid: 20f71b43a1f2da8408bd4397c217b82f, type: 3}
+<<<<<<< HEAD
+>>>>>>> parent of d0545cb... changed colliders
+=======
 >>>>>>> parent of d0545cb... changed colliders
 --- !u!1 &1185600069
 GameObject:
